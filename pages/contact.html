@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contact</title>
+        <title>Contact Me</title>
     </head>
     <body>
         <header>
-
+            <h3>Contact me right now</h3>
+            <p>
+                Simply fill in the form and I'll get back to you as soon as I can. 
+            </p>
         </header>
         <main>
-            
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Your details</legend>
+                    <label>
+                        Name:
+                        <input type="text" value="name">
+                    </label>
+                    <label>
+                        email:
+                        <input type="email" value="email">
+                    </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your message</legend>
+                <label>
+                   Why are you getting in touch?
+                    <select name="reason">
+                        <option value="Fun">Fun</option>
+                        <option value="Work">Work</option>
+                        <option value="Play">Play</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </label>
+                <br/>
+                <br/>
+                <label>What's the general mood of your message?</label>
+                <br/>
+                <label>
+                    <input type="radio" name="mood" value="Good" checked="checked">
+                    Good mood
+                </label>
+                <br/>
+                <label>
+                    <input type="radio" name="mood" value="Bad">
+                    Bad mood
+                </label>
+                <br/>
+                <br/>
+                <label>
+                    Message:
+                    <textarea placeholder="type your message here....."></textarea>
+                </label>
+                <br/>
+                <br/>
+                <label>
+                    <input type="checkbox" name="suscribe" value="spam_me">
+                    Sign up for <s>spam</s> newsletters?
+                </label>
+                <br/>
+                <br/>
+                <input type="submit" value="submit">
+            </fieldset>
+
+            </form>
         </main>
     </body>
 </html>
